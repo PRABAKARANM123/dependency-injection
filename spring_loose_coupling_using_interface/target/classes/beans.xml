@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="mathsCheatBean" class="spring_loose_coupling.MathsCheat"></bean>
+<bean id="scienceCheatBean" class="spring_loose_coupling.ScienceCheat"></bean>
+<bean id="javaCheatBean" class="spring_loose_coupling.JavaCheat"></bean>
+    
+<bean id = "sts" class = "spring_loose_coupling.Student">
+<property name="cheat" ref="javaCheatBean">
+
+</property>
+</bean>
+
+
+
+
+</beans>
